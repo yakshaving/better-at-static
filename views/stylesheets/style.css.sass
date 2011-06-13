@@ -1,0 +1,41 @@
+@import "base"
+
+a
+  +link-colors($link-color, $link-hover-color, $link-focus-color, $link-active-color, $link-visited-color)
+
+// Scaffold. Feel free to dump this.
++blueprint-typography
+
+#container
+  padding: 3em 0
+  +container
+  //+grid-background($total: $blueprint-grid-columns, $column: $blueprint-grid-width, $gutter: $blueprint-grid-margin, $baseline: $blueprint-font-size + ($blueprint-font-size * 0.5))
+
+  h1, #subheader p
+    margin-bottom: 0
+
+  nav
+    margin: 1em 0
+
+    ul
+      +no-bullets
+      +clearfix
+      background-color: #333
+      margin: 0
+      padding: 0
+
+
+      li
+        +column(3)
+        padding: 0.5em 0
+        text-align: center
+        background-color: #222
+
+        &:last-child
+          +column(3, true)
+  
+  // Grid scaffold
+  .primary
+    +column(8)
+  .secondary
+    +column(4, true)
