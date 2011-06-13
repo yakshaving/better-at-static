@@ -22,9 +22,6 @@
     %header
       %h1#logo= link_to '<span class="company">BettrAt</span> <span class="interest">Design</span>', '#'
       
-      - if yield_content :subheader
-        #subheader= yield_content :subheader
-      
       %nav
         %ul
           %li= link_to "Why?", '#'
