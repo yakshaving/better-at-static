@@ -22,12 +22,12 @@
     %header
       %h1#logo= link_to '<span class="company">BettrAt</span> <span class="interest">Design</span>', '#'
       
-      %nav
+      #slideshow
+      #call-to-action
+        %h2 #{link_to "Schools", '#'} * #{link_to "Enterprise", '#'} * #{link_to "Publishers", '#'}
         %ul
-          %li= link_to "Why?", '#'
-          %li= link_to "What?", '#'
-          %li= link_to "How?", '#'
-          %li= link_to "Who?", '#'
+          %li.cta-1= link_to "Find Us At <span>ASTD 2011</span>", '#'
+          %li.cta-2= link_to "Learn More", '#'
 
     #main( role="main" )= yield
     
