@@ -1,12 +1,26 @@
 - content_for :head do
-  %title Middleman Bootstrap
+  %title BettrAt - Get Better Faster
 
-- content_for :subheader do
-  %p Now with more MOLECULES!
 
-%h2 The Middleman is watching.
-%p.primary
-  Middleman Bootstrap Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+%dl.primary
+  %dt.devices= link_to "Lorem Ipsum", '#'
+  %dd Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  
+  %dt.plans= link_to "Lorem Ipsum", '#'
+  %dd Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  
+  %dt.people= link_to "Lorem Ipsum", '#'
+  %dd Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
-%p.secondary
-  And furthermore... Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+%dl.secondary
+  %dt.sharing= link_to "Lorem Ipsum", '#'
+  %dd Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  
+  %dt.records= link_to "Lorem Ipsum", '#'
+  %dd Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  
+  %dt.tracking= link_to "Lorem Ipsum", '#'
+  %dd Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+.tertiary
+  = link_to "Download <span>Whitepapers</span>", '#', :class => 'whitepapers'

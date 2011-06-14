@@ -4,38 +4,224 @@ a
   +link-colors($link-color, $link-hover-color, $link-focus-color, $link-active-color, $link-visited-color)
 
 // Scaffold. Feel free to dump this.
+// ============================================================================
 +blueprint-typography
 
 #container
-  padding: 3em 0
   +container
   //+grid-background($total: $blueprint-grid-columns, $column: $blueprint-grid-width, $gutter: $blueprint-grid-margin, $baseline: $blueprint-font-size + ($blueprint-font-size * 0.5))
 
-  h1, #subheader p
-    margin-bottom: 0
 
-  nav
-    margin: 1em 0
+// Landing Layout
+// ============================================================================
 
-    ul
-      +no-bullets
-      +clearfix
-      background-color: #333
-      margin: 0
-      padding: 0
+#landing-layout
 
+  // Header
+  // ==========================
 
-      li
-        +column(3)
-        padding: 0.5em 0
-        text-align: center
-        background-color: #222
+  header
+    height: 730px
+    background: url(/images/landing/header_bg.jpg) top center no-repeat
 
-        &:last-child
-          +column(3, true)
+    // Logo
+    h1#logo
+      margin-bottom: 50px
+      padding-top: 30px
+      padding-left: 25px
+
+      a
+        display: block
+        background: url(/images/logo.png) 0 0 no-repeat
+        height: 62px
+        color: #89a2b3
+        text-decoration: none
+
+        span.company
+          visibility: hidden
+          float: left
+          width: 0
+        
+        span.interest
+          padding-left: 170px
+          line-height: 1.3em
+    
+    // Tagline
+    h2#tagline
+      color: #e5ebee
+      text-align: center
+      font-style: italic
+
+  // Footer
+  // ==========================
+
+  footer
+    +clearfix
+    background: url(/images/landing/footer_bg.png) 0 0 repeat-x
+    height: 211px
+    padding-top: 30px
+
+    .copyright
+      +push(1)
+      color: #fff
+      padding-top: 3em
+      background: url(/images/footer_logo.png) 0 0 no-repeat
+    
+    .section
+      +column(2)
+
+      a
+        color: #89a2b3
+
+      h3
+        color: #fff
+        font-size: 1em
+        margin: 0
+
+      h3, li
+        line-height: 1.75em
+
+      ul
+        +no-bullets
+        padding: 0
+      
+
   
-  // Grid scaffold
-  .primary
-    +column(8)
-  .secondary
-    +column(4, true)
+  // CTA / Ledge
+  // ==========================
+  #call-to-action
+    position: absolute
+    top: 490px
+    width: $blueprint-container-size
+    height: 200px
+    background: url(/images/landing/ledge.png) bottom center no-repeat
+
+    h2
+      position: absolute
+      width: $blueprint-container-size
+      color: #fff
+      top: 120px
+      text-align: center
+
+      a
+        color: #fff
+
+    .cta
+      position: absolute
+      display: block
+      background: 0 0 no-repeat
+      text-indent: -999em
+
+    .cta-1
+      background-image: url(/images/landing/cta_1.png)
+      width: 124px
+      height: 124px
+      top: -30px
+      right: 60px
+
+    .cta-2
+      background-image: url(/images/landing/cta_2.png)
+      width: 214px
+      height: 67px
+      top: 120px
+      right: 20px
+
+
+  // Slideshow.
+  // ==========================
+
+  #slideshow
+    position: relative
+
+    .control
+      display: block
+      position: absolute
+      background: 0 0 no-repeat
+      width: 48px
+      height: 44px
+      text-indent: -999em
+
+      &.previous-slide
+        background-image: url(/images/landing/sliderbutton_prev.png)
+        top: 0
+        left: 0
+      &.next-slide
+        background-image: url(/images/landing/sliderbutton_next.png)
+        top: 0
+        right: 0
+
+    #slides
+      +transition(all)
+      position: relative
+    
+    .slide
+      +float-left
+
+    // Individual slide styles
+    .slide-1 .inner
+      width: 541px
+      margin: 0 auto
+
+  #main
+    +clearfix
+
+    .primary
+      +prepend(1)
+      +column(4)
+    .secondary
+      +column(4)
+    .tertiary
+      +float-left
+
+    // Features
+    dl
+      dt,dd
+        padding: 0 0 0 65px
+        margin: 0
+
+      // Icons
+      dt
+        background: 0 0 no-repeat
+        
+        // #TODO sprite this
+        &.devices
+          background-image: url(/images/icons/devices.png)
+          background-position: 0 0
+        &.plans
+          background-image: url(/images/icons/plans.png)
+          background-position: 8px 0
+        &.people
+          background-image: url(/images/icons/people.png)
+          background-position: 16px 0
+        &.sharing
+          background-image: url(/images/icons/lock.png)
+          background-position: 24px 0
+        &.records
+          background-image: url(/images/icons/filebox.png)
+          background-position: 22px 0
+        &.tracking
+          background-image: url(/images/icons/chart.png)
+          background-position: 20px 0
+
+      // DT height hack.
+      dt
+        height: 3em
+      dd
+        margin-top: -1.5em
+        margin-bottom: 1.5em
+
+    .tertiary
+      border-left: 5px solid #e3e3e3
+      background: url(/images/landing/whitepaper.png) center 100px no-repeat
+      height: 230px
+      width: 200px
+
+      a
+        display: block
+        background: url(/images/icons/download.png) 0 0 no-repeat
+        padding-left: 40px
+        margin-top: 20px
+        margin-left: 44px
+
+        span
+          display: block

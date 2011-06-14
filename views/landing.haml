@@ -16,22 +16,67 @@
   = javascript_include_tag "libs/modernizr-1.7.min.js"
   = yield_content :head
   
-%body
+%body#landing-layout
 
   #container
     %header
       %h1#logo= link_to '<span class="company">BettrAt</span> <span class="interest">Design</span>', '#'
+      %h2#tagline Get better at your career, hobbies, and school subjects in one place
       
       #slideshow
+        = link_to "Previous Slide", '#', :class => 'previous-slide control'
+        = link_to "Next Slide", '#', :class => 'next-slide control'
+        #slides
+          .slide.slide-1= image_tag "landing_slides/slide_1.png"
+          .slide.slide-2 Foo
+          .slide.slide-3 Bar
+
       #call-to-action
         %h2 #{link_to "Schools", '#'} * #{link_to "Enterprise", '#'} * #{link_to "Publishers", '#'}
-        %ul
-          %li.cta-1= link_to "Find Us At <span>ASTD 2011</span>", '#'
-          %li.cta-2= link_to "Learn More", '#'
+        = link_to "Find Us At <span>ASTD 2011</span>", '#', :class => 'cta cta-1'
+        = link_to "Learn More", '#', :class => 'cta cta-2'
 
     #main( role="main" )= yield
     
     %footer
+      .section.copyright
+        %h3 &copy; 2011
+
+      .section.company
+        %h3 Company
+        %ul
+          %li= link_to "link", '#'
+          %li= link_to "link", '#'
+          %li= link_to "link", '#'
+          %li= link_to "link", '#'
+          %li= link_to "link", '#'
+
+      .section.social
+        %h3 Social
+        %ul
+          %li= link_to "link", '#'
+          %li= link_to "link", '#'
+          %li= link_to "link", '#'
+          %li= link_to "link", '#'
+          %li= link_to "link", '#'
+
+      .section.links
+        %h3 Links
+        %ul
+          %li= link_to "link", '#'
+          %li= link_to "link", '#'
+          %li= link_to "link", '#'
+          %li= link_to "link", '#'
+          %li= link_to "link", '#'
+        
+      .section.blog
+        %h3 Blog
+        %ul
+          %li= link_to "link", '#'
+          %li= link_to "link", '#'
+          %li= link_to "link", '#'
+          %li= link_to "link", '#'
+          %li= link_to "link", '#'
 
   = partial "footer_scripts"
 
