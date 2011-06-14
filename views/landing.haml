@@ -15,7 +15,7 @@
   = stylesheet_link_tag "style.css?v=v2", :media => "all"
   = javascript_include_tag "libs/modernizr-1.7.min.js"
   = yield_content :head
-  
+
 %body#landing-layout
 
   #container
@@ -36,7 +36,7 @@
         %li Digital Photography
         %li Drawing
         %li Essay Writing
-        %li Fishing 
+        %li Fishing
         %li Football
         %li French
         %li Geometry
@@ -54,15 +54,15 @@
         %li Public Speaking
         %li Running
         %li Singing
-        %li Soccer 
+        %li Soccer
         %li Songwriting
-        %li Spanish 
+        %li Spanish
         %li Ultimate Frisbee
         %li Yodeling
         %li Your Career
         %li Writing
       %h2#tagline Get better at your career, hobbies, and school subjects in <span>one</span> place
-      
+
       #slideshow
         = link_to "Previous Slide", '#', :class => 'previous-slide control'
         = link_to "Next Slide", '#', :class => 'next-slide control'
@@ -74,10 +74,10 @@
       #call-to-action
         %h2 #{link_to "Schools", '#'} · #{link_to "Enterprise", '#'} · #{link_to "Publishers", '#'}
         = link_to "Find Us At <span>ASTD 2011</span>", '#', :class => 'cta cta-1'
-        = link_to "Learn More", '#', :class => 'cta cta-2'
+        -# = link_to "Learn More", '#', :class => 'cta cta-2'
 
     #main( role="main" )= yield
-    
+
     %footer
       .section.copyright
         %h3 &copy; 2011
@@ -103,13 +103,6 @@
           %li= link_to "K12 - Charter Schools", '#'
           %li= link_to "Enterprise Learning", '#'
           %li= link_to "For Publishers<br/> Product Tour", '#'
-        
-      .section.blog
-        %h3 Blog
-        %ul
-          %li= link_to "Justo Risus Tortor Vestibulum Ridiculus...", '#'
-          %li= link_to "Commodo Euismod Etiam Justo Sollicitudin...", '#'
-          %li= link_to "Etiam porta sem malesuada magna mollis euismod....", '#'
 
   = partial "footer_scripts"
 
