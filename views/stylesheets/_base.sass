@@ -1,12 +1,33 @@
+// Fonts
+$helvetica: "Helvetica Neue", Helvetica, Arial, sans-serif
+=helvetica($weight: normal, $style: normal)
+  font-family: $helvetica
+  font-weight: $weight
+  font-style: $style
+
+@import "http://fonts.googleapis.com/css?family=Lato:100,100italic,regular,bold,bolditalic"
+$lato: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif
+=lato($weight: normal, $style: normal)
+  font-family: $lato
+  font-weight: $weight
+  font-style: $style
+
+@import "http://fonts.googleapis.com/css?family=Merriweather:regular,bold"
+$merriweather: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif
+=merriweather($weight: normal, $style: normal)
+  font-family: $merriweather
+  font-weight: $weight
+  font-style: $style
+
 // Set defaults
 $font-color:         #2a2a2a
-$link-color:         #0388a6
+$link-color:         #005b8d
 $link-hover-color:   #009ce0
 $link-focus-color:   $link-color
 $link-active-color:  $link-color
 $link-visited-color: $link-color
 
-$blueprint-font-family:  'Century Gothic', 'Apple Gothic', 'Helvetica Neue', arial, sans-serif
+$blueprint-font-family: $lato
 $blueprint-font-size:    12px
 $blueprint-grid-columns: 12
 $blueprint-grid-width:   60px
@@ -16,3 +37,4 @@ $blueprint-grid-margin:  20px
 @import "compass"
 @import "blueprint"
 @import "h5bp"
+@import "newsticker"

@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#news {
+    position: absolute;
+    top: 22px;
+    left: 255px;
+    margin-top: 4px;
+    list-style-type: none;
+    color: #89a2b3;
+    font-size: 36px;
+    font-weight: normal;
+    letter-spacing: -1px;
+    list-style: none;
+    min-height: 1em;
+}
+
+#news li { display: none; }
+
+
+* html #news ul {
+    height: 1em;
+}
+#news #togglenewsticker {
+    overflow: hidden;
+    position: absolute;
+    right: 10px;
+    top: 12px;
+    width: 14px;
+    height: 14px;
+    text-indent: 20px;
+    outline: none;
+}
+* html #news #togglenewsticker {
+    right: 30px;
+}

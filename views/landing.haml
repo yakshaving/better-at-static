@@ -20,19 +20,59 @@
 
   #container
     %header
-      %h1#logo= link_to '<span class="company">BettrAt</span> <span class="interest">Design</span>', '#'
-      %h2#tagline Get better at your career, hobbies, and school subjects in one place
+      %h1#logo= link_to '<span class="company">BettrAt</span>', '#'
+      %ul#news.newsticker
+        %li Accounting
+        %li Adobe Design Suite
+        %li Amateur Radio
+        %li Archery
+        %li Arithmetic
+        %li Baseball
+        %li Bass Guitar
+        %li Camping
+        %li Chinese Cooking
+        %li Dancing
+        %li Design
+        %li Digital Photography
+        %li Drawing
+        %li Essay Writing
+        %li Fishing 
+        %li Football
+        %li French
+        %li Geometry
+        %li German
+        %li Golf
+        %li Guitar
+        %li Harmonica
+        %li Hindi
+        %li Horseback Riding
+        %li Italian
+        %li Movie Production
+        %li Piano
+        %li Photography
+        %li Programming
+        %li Public Speaking
+        %li Running
+        %li Singing
+        %li Soccer 
+        %li Songwriting
+        %li Spanish 
+        %li Ultimate Frisbee
+        %li Yodeling
+        %li Your Career
+        %li Writing
+      %h2#tagline Get better at your career, hobbies, and school subjects in <span>one</span> place
       
       #slideshow
         = link_to "Previous Slide", '#', :class => 'previous-slide control'
         = link_to "Next Slide", '#', :class => 'next-slide control'
         #slides
           .slide.slide-1= image_tag "landing_slides/slide_1.png"
-          .slide.slide-2 Foo
-          .slide.slide-3 Bar
+          .slide.slide-2= image_tag "landing_slides/slide_1.png"
+          .slide.slide-3= image_tag "landing_slides/slide_1.png"
 
       #call-to-action
-        %h2 #{link_to "Schools", '#'} * #{link_to "Enterprise", '#'} * #{link_to "Publishers", '#'}
+        %h2 #{link_to "Schools", '#'} · #{link_to "Enterprise", '#'} · #{link_to "Publishers", '#'}
         = link_to "Find Us At <span>ASTD 2011</span>", '#', :class => 'cta cta-1'
         = link_to "Learn More", '#', :class => 'cta cta-2'
 
@@ -45,38 +85,31 @@
       .section.company
         %h3 Company
         %ul
-          %li= link_to "link", '#'
-          %li= link_to "link", '#'
-          %li= link_to "link", '#'
-          %li= link_to "link", '#'
-          %li= link_to "link", '#'
+          %li= link_to "About Us", '#'
+          %li= link_to "We're Hiring", '#'
+          %li= link_to "BetterAt Blog", '#'
+          %li= link_to "Terms / Privacy Policy", '#'
 
       .section.social
         %h3 Social
         %ul
-          %li= link_to "link", '#'
-          %li= link_to "link", '#'
-          %li= link_to "link", '#'
-          %li= link_to "link", '#'
-          %li= link_to "link", '#'
+          %li= link_to "Facebook", '#'
+          %li= link_to "Twitter", '#'
 
       .section.links
         %h3 Links
         %ul
-          %li= link_to "link", '#'
-          %li= link_to "link", '#'
-          %li= link_to "link", '#'
-          %li= link_to "link", '#'
-          %li= link_to "link", '#'
+          %li= link_to "Higher Education", '#'
+          %li= link_to "K12 - Charter Schools", '#'
+          %li= link_to "Enterprise Learning", '#'
+          %li= link_to "For Publishers<br/> Product Tour", '#'
         
       .section.blog
         %h3 Blog
         %ul
-          %li= link_to "link", '#'
-          %li= link_to "link", '#'
-          %li= link_to "link", '#'
-          %li= link_to "link", '#'
-          %li= link_to "link", '#'
+          %li= link_to "Justo Risus Tortor Vestibulum Ridiculus...", '#'
+          %li= link_to "Commodo Euismod Etiam Justo Sollicitudin...", '#'
+          %li= link_to "Etiam porta sem malesuada magna mollis euismod....", '#'
 
   = partial "footer_scripts"
 

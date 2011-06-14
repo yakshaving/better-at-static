@@ -1,15 +1,18 @@
 @import "base"
 
-a
-  +link-colors($link-color, $link-hover-color, $link-focus-color, $link-active-color, $link-visited-color)
-
 // Scaffold. Feel free to dump this.
 // ============================================================================
 +blueprint-typography
 
 #container
   +container
+  padding: 0 20px
   //+grid-background($total: $blueprint-grid-columns, $column: $blueprint-grid-width, $gutter: $blueprint-grid-margin, $baseline: $blueprint-font-size + ($blueprint-font-size * 0.5))
+
+a
+  +link-colors($link-color, $link-hover-color, $link-focus-color, $link-active-color, $link-visited-color)
+  +transition(color, 0.2s)
+  text-decoration: none
 
 
 // Landing Layout
@@ -17,15 +20,22 @@ a
 
 #landing-layout
 
+  // Header/Footer Shadow
+  header,
+  footer
+    +box-shadow(rgba(#000, 0.8) 0 0 10px)
+
   // Header
   // ==========================
 
   header
-    height: 730px
+    +border-bottom-radius(5px)
+    height: 690px
     background: url(/images/landing/header_bg.jpg) top center no-repeat
 
     // Logo
     h1#logo
+      +helvetica
       margin-bottom: 50px
       padding-top: 30px
       padding-left: 25px
@@ -34,8 +44,12 @@ a
         display: block
         background: url(/images/logo.png) 0 0 no-repeat
         height: 62px
+        width: 160px
         color: #89a2b3
         text-decoration: none
+
+        &:hover
+          color: #88c2e9
 
         span.company
           visibility: hidden
@@ -48,17 +62,21 @@ a
     
     // Tagline
     h2#tagline
+      +lato(100, italic)
       color: #e5ebee
       text-align: center
-      font-style: italic
+
+      span
+        text-decoration: underline
 
   // Footer
   // ==========================
 
   footer
     +clearfix
+    +border-top-radius(5px)
     background: url(/images/landing/footer_bg.png) 0 0 repeat-x
-    height: 211px
+    height: 181px
     padding-top: 30px
 
     .copyright
@@ -69,17 +87,21 @@ a
     
     .section
       +column(2)
+    
+      &.blog
+        +column(3, true)
 
       a
         color: #89a2b3
 
       h3
         color: #fff
-        font-size: 1em
         margin: 0
 
       h3, li
-        line-height: 1.75em
+        font-size: 12px
+        line-height: 1.25em
+        margin-bottom: 0.75em
 
       ul
         +no-bullets
@@ -90,6 +112,7 @@ a
   // CTA / Ledge
   // ==========================
   #call-to-action
+    +border-bottom-radius(5px)
     position: absolute
     top: 490px
     width: $blueprint-container-size
@@ -97,6 +120,7 @@ a
     background: url(/images/landing/ledge.png) bottom center no-repeat
 
     h2
+      +lato
       position: absolute
       width: $blueprint-container-size
       color: #fff
@@ -105,6 +129,9 @@ a
 
       a
         color: #fff
+
+        &:hover
+          color: #89a2b3
 
     .cta
       position: absolute
@@ -123,7 +150,7 @@ a
       background-image: url(/images/landing/cta_2.png)
       width: 214px
       height: 67px
-      top: 120px
+      top: 100px
       right: 20px
 
 
@@ -132,6 +159,7 @@ a
 
   #slideshow
     position: relative
+    overflow: hidden
 
     .control
       display: block
@@ -140,15 +168,19 @@ a
       width: 48px
       height: 44px
       text-indent: -999em
+      z-index: 100
+
+      $x-offset: 140px
+      $y-offset: 180px
 
       &.previous-slide
         background-image: url(/images/landing/sliderbutton_prev.png)
-        top: 0
-        left: 0
+        left: $x-offset
+        top: $y-offset
       &.next-slide
         background-image: url(/images/landing/sliderbutton_next.png)
-        top: 0
-        right: 0
+        right: $x-offset
+        top: $y-offset
 
     #slides
       +transition(all)
@@ -158,12 +190,16 @@ a
       +float-left
 
     // Individual slide styles
-    .slide-1 .inner
+    .slide .inner
       width: 541px
       margin: 0 auto
 
+  // Main
+  // ==========================
+
   #main
     +clearfix
+    margin-top: 3em
 
     .primary
       +prepend(1)
@@ -205,8 +241,15 @@ a
 
       // DT height hack.
       dt
-        height: 3em
+        padding-bottom: 1.5em
+
+        a
+          font-size: 1.3em
+          line-height: 0.75em
+          text-decoration: none
       dd
+        color: #999
+        font-size: 14px
         margin-top: -1.5em
         margin-bottom: 1.5em
 
@@ -218,7 +261,9 @@ a
 
       a
         display: block
-        background: url(/images/icons/download.png) 0 0 no-repeat
+        background: url(/images/icons/download.png) 0 5px no-repeat
+        font-size: 14px
+        font-weight: bold
         padding-left: 40px
         margin-top: 20px
         margin-left: 44px
