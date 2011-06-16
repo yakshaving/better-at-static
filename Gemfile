@@ -1,3 +1,3 @@
 source :rubygems
 
-gem 'middleman'
+gem 'middleman', "2.0.0.beta3"
