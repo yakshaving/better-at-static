@@ -20,18 +20,11 @@
 
   #container
     %header
-      %h1#logo= link_to "<span class=\"company\">BettrAt</span> <span class=\"interest\">#{@page_title}</span>", '#'
+      %h1#logo= link_to "<span class=\"company\">BettrAt</span> <span class=\"interest\">#{@page_name}</span>", '#'
       = link_to "Back to main", "/", :class => "back-to-main"
       
       - if yield_content :subheader
         #subheader= yield_content :subheader
-      
-      %nav
-        %ul
-          %li= link_to "Why?", '#'
-          %li= link_to "What?", '#'
-          %li= link_to "How?", '#'
-          %li= link_to "Who?", '#'
 
     #main( role="main" )= yield
     
