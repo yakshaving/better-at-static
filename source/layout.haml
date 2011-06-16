@@ -16,11 +16,12 @@
   = javascript_include_tag "libs/modernizr-1.7.min.js"
   = yield_content :head
   
-%body
+%body#default-layout
 
   #container
     %header
-      %h1#logo= link_to '<span class="company">BettrAt</span> <span class="interest">Design</span>', '#'
+      %h1#logo= link_to "<span class=\"company\">BettrAt</span> <span class=\"interest\">#{@page_title}</span>", '#'
+      = link_to "Back to main", "/", :class => "back-to-main"
       
       - if yield_content :subheader
         #subheader= yield_content :subheader
@@ -34,7 +35,7 @@
 
     #main( role="main" )= yield
     
-    %footer
+    %footer= partial "shared_footer"
 
   = partial "footer_scripts"
 

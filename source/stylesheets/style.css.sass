@@ -15,59 +15,13 @@ a
   text-decoration: none
 
 
-// Landing Layout
+// Shared Layout
 // ============================================================================
 
-#landing-layout
+=headerfooter-shadow
+  +box-shadow(rgba(#000, 0.8) 0 0 10px)
 
-  // Header/Footer Shadow
-  header,
-  footer
-    +box-shadow(rgba(#000, 0.8) 0 0 10px)
-
-  // Header
-  // ==========================
-
-  header
-    +border-bottom-radius(5px)
-    height: 690px
-    background: url(/images/landing/header_bg.jpg) top center no-repeat
-
-    // Logo
-    h1#logo
-      +helvetica
-      margin-bottom: 50px
-      padding-top: 30px
-      padding-left: 25px
-
-      a
-        display: block
-        background: url(/images/logo.png) 0 0 no-repeat
-        height: 62px
-        width: 160px
-        color: #89a2b3
-        text-decoration: none
-
-        &:hover
-          color: #88c2e9
-
-        span.company
-          visibility: hidden
-          float: left
-          width: 0
-        
-        span.interest
-          padding-left: 170px
-          line-height: 1.3em
-    
-    // Tagline
-    h2#tagline
-      +lato(100, italic)
-      color: #e5ebee
-      text-align: center
-
-      span
-        text-decoration: underline
+body
 
   // Footer
   // ==========================
@@ -75,6 +29,7 @@ a
   footer
     +clearfix
     +border-top-radius(5px)
+    +headerfooter-shadow
     background: url(/images/landing/footer_bg.png) 0 0 repeat-x
     height: 181px
     padding-top: 30px
@@ -106,9 +61,57 @@ a
       ul
         +no-bullets
         padding: 0
-      
 
+
+// Landing Layout
+// ============================================================================
+
+body#landing-layout
   
+  // Header
+  // ==========================
+
+  header
+    +border-bottom-radius(5px)
+    +headerfooter-shadow
+    height: 690px
+    background: url(/images/landing/header_bg.jpg) top center no-repeat
+
+    // Logo
+    h1#logo
+      +helvetica
+      margin-bottom: 50px
+      padding-top: 30px
+      padding-left: 25px
+
+      a
+        display: block
+        background: url(/images/logo.png) 0 0 no-repeat
+        height: 62px
+        color: #89a2b3
+        text-decoration: none
+
+        &:hover
+          color: #88c2e9
+
+        span.company
+          visibility: hidden
+          float: left
+          width: 0
+        
+        span.interest
+          padding-left: 170px
+          line-height: 1.3em
+    
+    // Tagline
+    h2#tagline
+      +lato(100, italic)
+      color: #e5ebee
+      text-align: center
+
+      span
+        text-decoration: underline
+
   // CTA / Ledge
   // ==========================
   #call-to-action
@@ -270,3 +273,53 @@ a
 
         span
           display: block
+
+
+// Default Layout
+// ============================================================================
+
+body#default-layout
+
+  // Header
+  // ==========================
+
+  header
+
+    // Logo
+    h1#logo
+      margin: 0.75em 0 0
+
+      a
+        +inline-block
+        +lato
+        background: url(/images/logo_alt.png) 0 0 no-repeat
+        height: 50px
+        color: #000
+        text-decoration: none
+        font-size: 24px
+
+        span.company
+          visibility: hidden
+          float: left
+          width: 0
+        
+        span.interest
+          padding-left: 140px
+          line-height: 1.7em
+    
+    // Tagline
+    h2#tagline
+      +lato(100, italic)
+      color: #e5ebee
+      text-align: center
+
+      span
+        text-decoration: underline
+
+    // Back to main
+    a.back-to-main
+      display: block
+      background: url(/images/back_to_main.png) 0 0 no-repeat
+      width: 86px
+      height: 20px
+      text-indent: -999em
