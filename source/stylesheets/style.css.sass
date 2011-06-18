@@ -105,7 +105,7 @@ body#landing-layout
     
     // Tagline
     h2#tagline
-      +lato(100, italic)
+      +lato(normal, italic)
       color: #e5ebee
       text-align: center
 
@@ -280,6 +280,84 @@ body#landing-layout
 
 body#default-layout
 
+  // Elements
+  // ==========================
+
+  p
+    color: #888
+
+  h3
+    font-weight: bold
+
+  ul.blog-entries
+    +no-bullets
+    padding: 0
+
+    li
+      position: relative
+    
+    label
+      position: absolute
+      left: -40px
+      top: -5px
+      background: url(/images/calendar.png) 0 0 no-repeat
+      color: #9b9b9b
+      font-size: 12px
+      font-weight: bold
+      width: 30px
+      height: 31px
+      padding-top: 13px
+      text-align: center
+    
+    h4
+      +lato(normal, italic)
+      font-size: 18px
+      margin-bottom: 0.25em
+  
+  ul.twitter
+    +no-bullets
+    padding: 0
+    li
+      margin-bottom: 0.75em
+
+  .contact-form
+    input[type=text], textarea
+      display: block
+      border: 1px solid #d4d4d2
+      background: #fffef3
+      font-size: 16px
+      padding: 0.25em 0.5em
+      width: 100%
+      margin-bottom: 0.5em
+    
+    textarea
+      height: 10em
+
+    button
+      +border-radius(5px)
+      border: none
+      background: #003c5f
+      color: #fff
+      font-size: 14px
+      font-weight: bold
+      padding: 10px 30px
+
+  .cta-box
+    border: 1px solid #dbddde
+    background: #f0f3f5
+    padding: 1.5em 1em
+    margin-bottom: 1.5em
+
+    h3
+      font-size: 16px
+
+  .support-header
+    margin-bottom: 3em
+
+  .benefits
+    padding-left: 2em
+
+
   // Header
   // ==========================
 
@@ -309,7 +387,7 @@ body#default-layout
     
     // Tagline
     h2#tagline
-      +lato(100, italic)
+      +lato(normal, italic)
       color: #e5ebee
       text-align: center
 
@@ -329,13 +407,45 @@ body#default-layout
   // ==========================
 
   #main
+    +clearfix
     padding-top: 0.75em
+    margin-bottom: 3em
     
     // Page titles
     h2.page-title
       +lato(900)
       margin: 0
     p.page-subtitle
-      +lato(100,italic)
-      color: #9b9b9b
+      +lato(normal,italic)
+      color: #888
       font-size: 20px
+  
+
+  // Content Header
+  // ==========================
+  
+  .content-header
+    margin-bottom: 3em
+
+
+  // Layout
+  // ==========================
+
+  .primary
+    +column(6)
+    +append(2)
+  .secondary
+    +column(4, true)
+
+
+// page-specific
+// ============================================================================
+
+#faqs
+  .cta
+    margin-bottom: 3em
+
+  h4
+    font-size: 16px
+    margin-bottom: 0.25em
+    font-weight: bold
