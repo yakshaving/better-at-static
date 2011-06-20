@@ -354,8 +354,74 @@ body#default-layout
   .support-header
     margin-bottom: 3em
 
-  .benefits
+  dl.benefits
     padding-left: 2em
+
+    dt
+      font-size: 1.5em
+      margin-bottom: 1em
+      color: $header-color
+    
+    dd
+      margin-bottom: 1.5em
+      color: $font-color
+      margin-left: 0
+    
+  .signup-contact
+    border-top: 2px solid #ddd
+    padding-top: 1.5em
+    margin-top: 1.5em
+
+    .signup-button
+      margin-bottom: 1em
+
+  .contact-info
+    h3, label, a, span, p
+      color: #fff
+
+    .alt-contact,
+    .questions
+      padding: 1em 2em
+
+    .alt-contact
+      +border-top-radius(10px)
+      background: #003c5f
+      padding: 1em 2em
+
+      h3
+        text-align: center
+
+      ul
+        +no-bullets
+        margin: 0
+        padding: 0
+
+        li
+          font-size: 20px
+          padding-left: 30px
+          background: 0 center no-repeat
+
+          &.email
+            background-image: url(/images/icons/contact_mail.png)
+          &.twitter
+            background-image: url(/images/icons/contact_twitter.png)
+          &.phone
+            background-image: url(/images/icons/contact_phone.png)
+            background-position: 5px center
+
+          label
+            +inline-block
+            width: 70px
+
+          span, a
+            font-weight: 100
+            font-style: italic
+    
+    .questions
+      +border-bottom-radius(10px)
+      background: url(/images/icons/book.png) 7% 10px no-repeat, url(/images/icons/bookmark.png) 92% 0 no-repeat
+      background-color: #a4be93
+      padding: 1em 5.5em
 
 
   // Header

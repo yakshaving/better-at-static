@@ -3,6 +3,28 @@
 - content_for :head do
   %title BettrAt - Get Better Faster
 
+#contact
+  .primary
+    %h2.page-title We'd love to hear from you
+    %p.page-subtitle Drop us a line
 
-%h2.page-title We'd love to hear from you
-%p.page-subtitle Drop us a line
+    = partial "contact_form"
+  
+  .secondary
+    .contact-info
+      .alt-contact
+        %h3 or email us...
+        %ul
+          %li.email
+            %label email
+            = link_to "info@bettr.at", "mailto:info@bettr.at"
+          %li.twitter
+            %label twitter
+            = link_to "@BetterAt", "http://twitter.com/BetterAt"
+          %li.phone
+            %label phone
+            %span (650) 352-3810
+
+      .questions
+        %h3 Q. What comes <em>after</em> the eBook or course?
+        %p We're keenly interested in finding out what the next evolution of content and media distribution is after the static book/journal and classroom learning.  BetterAt plans are the intersection of a new type of digital media experience that truly engages people in an immersive, social learning platform.
