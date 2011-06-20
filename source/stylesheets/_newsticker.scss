@@ -6,7 +6,7 @@
 #news {
     position: absolute;
     top: 22px;
-    left: 255px;
+    left: 325px;
     margin-top: 4px;
     list-style-type: none;
     color: #89a2b3;
@@ -17,7 +17,7 @@
     min-height: 1em;
 }
 
-#news li { display: none; }
+#news li { display: none; white-space: nowrap }
 
 
 * html #news ul {

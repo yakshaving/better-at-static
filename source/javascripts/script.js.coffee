@@ -1,5 +1,3 @@
-jQuery("#news").newsticker(200)
-
 jQuery.fn.ba_slider = () ->
   # Containers and slides
   div = $(this)
@@ -52,3 +50,5 @@ jQuery.fn.ba_slider = () ->
 
 $('#slideshow').ba_slider()
 
+# News Ticker
+$('#news').cycle({speed:  500, timeout:  200})
