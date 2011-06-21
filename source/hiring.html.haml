@@ -3,6 +3,21 @@
 - content_for :head do
   %title BettrAt - Get Better Faster
 
+#hiring
+  .primary
+    %h2.page-title We are hiring awesome people :-)
+    %p.page-subtitle Help us redefine what education means in the 21st century
 
-%h2.page-title We are hiring awesome people :-)
-%p.page-subtitle Help us redefine what education means in the 21st century
+    .support-header
+      %h3 Open Positions
+      %p We're looking for folks who are passionate about changing the world of education as we know it.  
+
+    %h4 Database/Backend Engineer
+    %p
+      Requirements <br />
+      = "- Experience scaling production Rails apps (provide examples and/or a portfolio if possible) <br />"
+      = "- Experience with nosql (e.g. MongoDB) preferred"
+
+    %p Contact us at #{link_to "info@bettr.at", "mailto:info@bettr.at"}
+
+  .secondary= image_tag "hiring.png"
