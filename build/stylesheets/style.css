@@ -1,8 +1,8 @@
 @charset "ASCII-8BIT";
-@import url(http://fonts.googleapis.com/css?family=Lato:100,100italic,regular,bold,bolditalic);
+@import url(http://fonts.googleapis.com/css?family=Lato:100,100italic,regular,bold,900,bolditalic);
 @import url(http://fonts.googleapis.com/css?family=Merriweather:regular,bold);
 /* HTML5 ✰ Boilerplate */
-/* line 11, ../../views/stylesheets/_h5bp.scss */
+/* line 11, source/stylesheets/_h5bp.scss */
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
@@ -19,49 +19,49 @@ time, mark, audio, video {
   font: inherit;
   vertical-align: baseline; }
 
-/* line 21, ../../views/stylesheets/_h5bp.scss */
+/* line 21, source/stylesheets/_h5bp.scss */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block; }
 
-/* line 25, ../../views/stylesheets/_h5bp.scss */
+/* line 25, source/stylesheets/_h5bp.scss */
 blockquote, q {
   quotes: none; }
 
-/* line 27, ../../views/stylesheets/_h5bp.scss */
+/* line 27, source/stylesheets/_h5bp.scss */
 blockquote:before, blockquote:after,
 q:before, q:after {
   content: "";
   content: none; }
 
-/* line 28, ../../views/stylesheets/_h5bp.scss */
+/* line 28, source/stylesheets/_h5bp.scss */
 ins {
   background-color: #ff9;
   color: #000;
   text-decoration: none; }
 
-/* line 29, ../../views/stylesheets/_h5bp.scss */
+/* line 29, source/stylesheets/_h5bp.scss */
 mark {
   background-color: #ff9;
   color: #000;
   font-style: italic;
   font-weight: bold; }
 
-/* line 30, ../../views/stylesheets/_h5bp.scss */
+/* line 30, source/stylesheets/_h5bp.scss */
 del {
   text-decoration: line-through; }
 
-/* line 31, ../../views/stylesheets/_h5bp.scss */
+/* line 31, source/stylesheets/_h5bp.scss */
 abbr[title], dfn[title] {
   border-bottom: 1px dotted;
   cursor: help; }
 
-/* line 32, ../../views/stylesheets/_h5bp.scss */
+/* line 32, source/stylesheets/_h5bp.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-/* line 33, ../../views/stylesheets/_h5bp.scss */
+/* line 33, source/stylesheets/_h5bp.scss */
 hr {
   display: block;
   height: 1px;
@@ -70,175 +70,175 @@ hr {
   margin: 1em 0;
   padding: 0; }
 
-/* line 34, ../../views/stylesheets/_h5bp.scss */
+/* line 34, source/stylesheets/_h5bp.scss */
 input, select {
   vertical-align: middle; }
 
-/* line 36, ../../views/stylesheets/_h5bp.scss */
+/* line 36, source/stylesheets/_h5bp.scss */
 body {
   font: 13px/1.231 sans-serif;
   *font-size: small; }
 
-/* line 37, ../../views/stylesheets/_h5bp.scss */
+/* line 37, source/stylesheets/_h5bp.scss */
 select, input, textarea, button {
   font: 99% sans-serif; }
 
-/* line 38, ../../views/stylesheets/_h5bp.scss */
+/* line 38, source/stylesheets/_h5bp.scss */
 pre, code, kbd, samp {
   font-family: monospace, sans-serif; }
 
-/* line 40, ../../views/stylesheets/_h5bp.scss */
+/* line 40, source/stylesheets/_h5bp.scss */
 html {
   overflow-y: scroll; }
 
-/* line 41, ../../views/stylesheets/_h5bp.scss */
+/* line 41, source/stylesheets/_h5bp.scss */
 a:hover, a:active {
   outline: none; }
 
-/* line 42, ../../views/stylesheets/_h5bp.scss */
+/* line 42, source/stylesheets/_h5bp.scss */
 ul, ol {
   margin-left: 2em; }
 
-/* line 43, ../../views/stylesheets/_h5bp.scss */
+/* line 43, source/stylesheets/_h5bp.scss */
 ol {
   list-style-type: decimal; }
 
-/* line 44, ../../views/stylesheets/_h5bp.scss */
+/* line 44, source/stylesheets/_h5bp.scss */
 nav ul, nav li {
   margin: 0;
   list-style: none;
   list-style-image: none; }
 
-/* line 45, ../../views/stylesheets/_h5bp.scss */
+/* line 45, source/stylesheets/_h5bp.scss */
 small {
   font-size: 85%; }
 
-/* line 46, ../../views/stylesheets/_h5bp.scss */
+/* line 46, source/stylesheets/_h5bp.scss */
 strong, th {
   font-weight: bold; }
 
-/* line 47, ../../views/stylesheets/_h5bp.scss */
+/* line 47, source/stylesheets/_h5bp.scss */
 td {
   vertical-align: top; }
 
-/* line 48, ../../views/stylesheets/_h5bp.scss */
+/* line 48, source/stylesheets/_h5bp.scss */
 sub, sup {
   font-size: 75%;
   line-height: 0;
   position: relative; }
 
-/* line 49, ../../views/stylesheets/_h5bp.scss */
+/* line 49, source/stylesheets/_h5bp.scss */
 sup {
   top: -0.5em; }
 
-/* line 50, ../../views/stylesheets/_h5bp.scss */
+/* line 50, source/stylesheets/_h5bp.scss */
 sub {
   bottom: -0.25em; }
 
-/* line 52, ../../views/stylesheets/_h5bp.scss */
+/* line 52, source/stylesheets/_h5bp.scss */
 pre {
   white-space: pre;
   white-space: pre-wrap;
   word-wrap: break-word;
   padding: 15px; }
 
-/* line 53, ../../views/stylesheets/_h5bp.scss */
+/* line 53, source/stylesheets/_h5bp.scss */
 textarea {
   overflow: auto; }
 
-/* line 54, ../../views/stylesheets/_h5bp.scss */
+/* line 54, source/stylesheets/_h5bp.scss */
 .ie6 legend, .ie7 legend {
   margin-left: -7px; }
 
-/* line 55, ../../views/stylesheets/_h5bp.scss */
+/* line 55, source/stylesheets/_h5bp.scss */
 input[type="radio"] {
   vertical-align: text-bottom; }
 
-/* line 56, ../../views/stylesheets/_h5bp.scss */
+/* line 56, source/stylesheets/_h5bp.scss */
 input[type="checkbox"] {
   vertical-align: bottom; }
 
-/* line 57, ../../views/stylesheets/_h5bp.scss */
+/* line 57, source/stylesheets/_h5bp.scss */
 .ie7 input[type="checkbox"] {
   vertical-align: baseline; }
 
-/* line 58, ../../views/stylesheets/_h5bp.scss */
+/* line 58, source/stylesheets/_h5bp.scss */
 .ie6 input {
   vertical-align: text-bottom; }
 
-/* line 59, ../../views/stylesheets/_h5bp.scss */
+/* line 59, source/stylesheets/_h5bp.scss */
 label, input[type="button"], input[type="submit"], input[type="image"], button {
   cursor: pointer; }
 
-/* line 60, ../../views/stylesheets/_h5bp.scss */
+/* line 60, source/stylesheets/_h5bp.scss */
 button, input, select, textarea {
   margin: 0; }
 
-/* line 62, ../../views/stylesheets/_h5bp.scss */
+/* line 62, source/stylesheets/_h5bp.scss */
 input:invalid, textarea:invalid {
   border-radius: 1px;
   -moz-box-shadow: 0px 0px 5px red;
   -webkit-box-shadow: 0px 0px 5px red;
   box-shadow: 0px 0px 5px red; }
 
-/* line 63, ../../views/stylesheets/_h5bp.scss */
+/* line 63, source/stylesheets/_h5bp.scss */
 .no-boxshadow input:invalid, .no-boxshadow textarea:invalid {
   background-color: #f0dddd; }
 
-/* line 66, ../../views/stylesheets/_h5bp.scss */
+/* line 66, source/stylesheets/_h5bp.scss */
 ::-moz-selection {
   background: #FF5E99;
   color: #fff;
   text-shadow: none; }
 
-/* line 67, ../../views/stylesheets/_h5bp.scss */
+/* line 67, source/stylesheets/_h5bp.scss */
 ::selection {
   background: #FF5E99;
   color: #fff;
   text-shadow: none; }
 
-/* line 68, ../../views/stylesheets/_h5bp.scss */
+/* line 68, source/stylesheets/_h5bp.scss */
 a:link {
   -webkit-tap-highlight-color: #FF5E99; }
 
-/* line 69, ../../views/stylesheets/_h5bp.scss */
+/* line 69, source/stylesheets/_h5bp.scss */
 button {
   width: auto;
   overflow: visible; }
 
-/* line 70, ../../views/stylesheets/_h5bp.scss */
+/* line 70, source/stylesheets/_h5bp.scss */
 .ie7 img {
   -ms-interpolation-mode: bicubic; }
 
-/* line 72, ../../views/stylesheets/_h5bp.scss */
+/* line 72, source/stylesheets/_h5bp.scss */
 body, select, input, textarea {
   color: #444; }
 
-/* line 73, ../../views/stylesheets/_h5bp.scss */
+/* line 73, source/stylesheets/_h5bp.scss */
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold; }
 
-/* line 74, ../../views/stylesheets/_h5bp.scss */
+/* line 74, source/stylesheets/_h5bp.scss */
 a, a:active, a:visited {
   color: #607890; }
 
-/* line 75, ../../views/stylesheets/_h5bp.scss */
+/* line 75, source/stylesheets/_h5bp.scss */
 a:hover {
   color: #036; }
 
 @import url(h5bp_primary);
 @import url(h5bp_media);
 @import url(h5bp_print);
-/* line 1, ../../views/stylesheets/_newsticker.scss */
+/* line 1, source/stylesheets/_newsticker.scss */
 * {
   margin: 0;
   padding: 0; }
 
-/* line 6, ../../views/stylesheets/_newsticker.scss */
+/* line 6, source/stylesheets/_newsticker.scss */
 #news {
   position: absolute;
   top: 22px;
-  left: 255px;
+  left: 325px;
   margin-top: 4px;
   list-style-type: none;
   color: #89a2b3;
@@ -248,15 +248,16 @@ a:hover {
   list-style: none;
   min-height: 1em; }
 
-/* line 20, ../../views/stylesheets/_newsticker.scss */
+/* line 20, source/stylesheets/_newsticker.scss */
 #news li {
-  display: none; }
+  display: none;
+  white-space: nowrap; }
 
-/* line 23, ../../views/stylesheets/_newsticker.scss */
+/* line 23, source/stylesheets/_newsticker.scss */
 * html #news ul {
   height: 1em; }
 
-/* line 26, ../../views/stylesheets/_newsticker.scss */
+/* line 26, source/stylesheets/_newsticker.scss */
 #news #togglenewsticker {
   overflow: hidden;
   position: absolute;
@@ -267,7 +268,7 @@ a:hover {
   text-indent: 20px;
   outline: none; }
 
-/* line 36, ../../views/stylesheets/_newsticker.scss */
+/* line 36, source/stylesheets/_newsticker.scss */
 * html #news #togglenewsticker {
   right: 30px; }
 
@@ -275,13 +276,13 @@ a:hover {
 body {
   line-height: 1.5;
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #2a2a2a;
+  color: #999999;
   font-size: 75%; }
 
 /* line 51, ../../../../../../.rvm/gems/ruby-1.9.2-p180@better_at_static/gems/compass-0.11.2/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
 h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
-  color: #191919; }
+  color: #333333; }
   /* line 52, ../../../../../../.rvm/gems/ruby-1.9.2-p180@better_at_static/gems/compass-0.11.2/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
   h1 img, h2 img, h3 img, h4 img, h5 img, h6 img {
     margin: 0; }
@@ -454,13 +455,13 @@ caption {
 
 /* line 88, ../../../../../../.rvm/gems/ruby-1.9.2-p180@better_at_static/gems/compass-0.11.2/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
 .quiet {
-  color: #5d5d5d; }
+  color: #cccccc; }
 
 /* line 89, ../../../../../../.rvm/gems/ruby-1.9.2-p180@better_at_static/gems/compass-0.11.2/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
 .loud {
-  color: #080808; }
+  color: #777777; }
 
-/* line 7, ../../views/stylesheets/style.css.sass */
+/* line 7, source/stylesheets/style.css.sass */
 #container {
   width: 940px;
   margin: 0 auto;
@@ -468,7 +469,7 @@ caption {
   *zoom: 1;
   padding: 0 20px; }
 
-/* line 12, ../../views/stylesheets/style.css.sass */
+/* line 12, source/stylesheets/style.css.sass */
 a {
   color: #005b8d;
   -moz-transition-property: color;
@@ -493,69 +494,8 @@ a {
   a:active {
     color: #005b8d; }
 
-/* line 24, ../../views/stylesheets/style.css.sass */
-#landing-layout header,
-#landing-layout footer {
-  -moz-box-shadow: rgba(0, 0, 0, 0.8) 0 0 10px;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.8) 0 0 10px;
-  -o-box-shadow: rgba(0, 0, 0, 0.8) 0 0 10px;
-  box-shadow: rgba(0, 0, 0, 0.8) 0 0 10px; }
-/* line 31, ../../views/stylesheets/style.css.sass */
-#landing-layout header {
-  -moz-border-radius-bottomleft: 5px;
-  -webkit-border-bottom-left-radius: 5px;
-  -o-border-bottom-left-radius: 5px;
-  -ms-border-bottom-left-radius: 5px;
-  -khtml-border-bottom-left-radius: 5px;
-  border-bottom-left-radius: 5px;
-  -moz-border-radius-bottomright: 5px;
-  -webkit-border-bottom-right-radius: 5px;
-  -o-border-bottom-right-radius: 5px;
-  -ms-border-bottom-right-radius: 5px;
-  -khtml-border-bottom-right-radius: 5px;
-  border-bottom-right-radius: 5px;
-  height: 690px;
-  background: url(/images/landing/header_bg.jpg) top center no-repeat; }
-  /* line 37, ../../views/stylesheets/style.css.sass */
-  #landing-layout header h1#logo {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-weight: normal;
-    font-style: normal;
-    margin-bottom: 50px;
-    padding-top: 30px;
-    padding-left: 25px; }
-    /* line 43, ../../views/stylesheets/style.css.sass */
-    #landing-layout header h1#logo a {
-      display: block;
-      background: url(/images/logo.png) 0 0 no-repeat;
-      height: 62px;
-      width: 160px;
-      color: #89a2b3;
-      text-decoration: none; }
-      /* line 51, ../../views/stylesheets/style.css.sass */
-      #landing-layout header h1#logo a:hover {
-        color: #88c2e9; }
-      /* line 54, ../../views/stylesheets/style.css.sass */
-      #landing-layout header h1#logo a span.company {
-        visibility: hidden;
-        float: left;
-        width: 0; }
-      /* line 59, ../../views/stylesheets/style.css.sass */
-      #landing-layout header h1#logo a span.interest {
-        padding-left: 170px;
-        line-height: 1.3em; }
-  /* line 64, ../../views/stylesheets/style.css.sass */
-  #landing-layout header h2#tagline {
-    font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-weight: 100;
-    font-style: italic;
-    color: #e5ebee;
-    text-align: center; }
-    /* line 69, ../../views/stylesheets/style.css.sass */
-    #landing-layout header h2#tagline span {
-      text-decoration: underline; }
-/* line 75, ../../views/stylesheets/style.css.sass */
-#landing-layout footer {
+/* line 29, source/stylesheets/style.css.sass */
+body footer {
   overflow: hidden;
   *zoom: 1;
   -moz-border-radius-topleft: 5px;
@@ -570,11 +510,15 @@ a {
   -ms-border-top-right-radius: 5px;
   -khtml-border-top-right-radius: 5px;
   border-top-right-radius: 5px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.8) 0 0 10px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.8) 0 0 10px;
+  -o-box-shadow: rgba(0, 0, 0, 0.8) 0 0 10px;
+  box-shadow: rgba(0, 0, 0, 0.8) 0 0 10px;
   background: url(/images/landing/footer_bg.png) 0 0 repeat-x;
   height: 181px;
   padding-top: 30px; }
-  /* line 82, ../../views/stylesheets/style.css.sass */
-  #landing-layout footer .copyright {
+  /* line 37, source/stylesheets/style.css.sass */
+  body footer .copyright {
     display: inline;
     float: left;
     position: relative;
@@ -582,47 +526,105 @@ a {
     color: white;
     padding-top: 3em;
     background: url(/images/footer_logo.png) 0 0 no-repeat; }
-  /* line 88, ../../views/stylesheets/style.css.sass */
-  #landing-layout footer .section {
+  /* line 43, source/stylesheets/style.css.sass */
+  body footer .section {
     display: inline;
     float: left;
     margin-right: 20px;
     width: 140px; }
     /* line 147, ../../../../../../.rvm/gems/ruby-1.9.2-p180@better_at_static/gems/compass-0.11.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
-    * html #landing-layout footer .section {
+    * html body footer .section {
       overflow-x: hidden; }
-    /* line 91, ../../views/stylesheets/style.css.sass */
-    #landing-layout footer .section.blog {
+    /* line 46, source/stylesheets/style.css.sass */
+    body footer .section.blog {
       display: inline;
       float: left;
       margin-right: 0;
       width: 220px; }
       /* line 147, ../../../../../../.rvm/gems/ruby-1.9.2-p180@better_at_static/gems/compass-0.11.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
-      * html #landing-layout footer .section.blog {
+      * html body footer .section.blog {
         overflow-x: hidden; }
-    /* line 94, ../../views/stylesheets/style.css.sass */
-    #landing-layout footer .section a {
+    /* line 49, source/stylesheets/style.css.sass */
+    body footer .section a {
       color: #89a2b3; }
-    /* line 97, ../../views/stylesheets/style.css.sass */
-    #landing-layout footer .section h3 {
+    /* line 52, source/stylesheets/style.css.sass */
+    body footer .section h3 {
       color: white;
       margin: 0; }
-    /* line 101, ../../views/stylesheets/style.css.sass */
-    #landing-layout footer .section h3, #landing-layout footer .section li {
+    /* line 56, source/stylesheets/style.css.sass */
+    body footer .section h3, body footer .section li {
       font-size: 12px;
       line-height: 1.25em;
       margin-bottom: 0.75em; }
-    /* line 106, ../../views/stylesheets/style.css.sass */
-    #landing-layout footer .section ul {
+    /* line 61, source/stylesheets/style.css.sass */
+    body footer .section ul {
       list-style: none;
       padding: 0; }
       /* line 11, ../../../../../../.rvm/gems/ruby-1.9.2-p180@better_at_static/gems/compass-0.11.2/frameworks/compass/stylesheets/compass/typography/lists/_bullets.scss */
-      #landing-layout footer .section ul li {
+      body footer .section ul li {
         list-style-image: none;
         list-style-type: none;
         margin-left: 0px; }
-/* line 114, ../../views/stylesheets/style.css.sass */
-#landing-layout #call-to-action {
+
+/* line 74, source/stylesheets/style.css.sass */
+body#landing-layout header {
+  -moz-border-radius-bottomleft: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+  -o-border-bottom-left-radius: 5px;
+  -ms-border-bottom-left-radius: 5px;
+  -khtml-border-bottom-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  -moz-border-radius-bottomright: 5px;
+  -webkit-border-bottom-right-radius: 5px;
+  -o-border-bottom-right-radius: 5px;
+  -ms-border-bottom-right-radius: 5px;
+  -khtml-border-bottom-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.8) 0 0 10px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.8) 0 0 10px;
+  -o-box-shadow: rgba(0, 0, 0, 0.8) 0 0 10px;
+  box-shadow: rgba(0, 0, 0, 0.8) 0 0 10px;
+  height: 690px;
+  background: url(/images/landing/header_bg.jpg) top center no-repeat; }
+  /* line 81, source/stylesheets/style.css.sass */
+  body#landing-layout header h1#logo {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    margin-bottom: 50px;
+    padding-top: 30px;
+    padding-left: 25px; }
+    /* line 87, source/stylesheets/style.css.sass */
+    body#landing-layout header h1#logo a {
+      display: block;
+      background: url(/images/logo.png) 0 0 no-repeat;
+      height: 62px;
+      color: #89a2b3;
+      text-decoration: none; }
+      /* line 94, source/stylesheets/style.css.sass */
+      body#landing-layout header h1#logo a:hover {
+        color: #88c2e9; }
+      /* line 97, source/stylesheets/style.css.sass */
+      body#landing-layout header h1#logo a span.company {
+        visibility: hidden;
+        float: left;
+        width: 0; }
+      /* line 102, source/stylesheets/style.css.sass */
+      body#landing-layout header h1#logo a span.interest {
+        padding-left: 170px;
+        line-height: 1.3em; }
+  /* line 107, source/stylesheets/style.css.sass */
+  body#landing-layout header h2#tagline {
+    font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 100;
+    font-style: italic;
+    color: #e5ebee;
+    text-align: center; }
+    /* line 112, source/stylesheets/style.css.sass */
+    body#landing-layout header h2#tagline span {
+      text-decoration: underline; }
+/* line 117, source/stylesheets/style.css.sass */
+body#landing-layout #call-to-action {
   -moz-border-radius-bottomleft: 5px;
   -webkit-border-bottom-left-radius: 5px;
   -o-border-bottom-left-radius: 5px;
@@ -640,8 +642,8 @@ a {
   width: 940px;
   height: 200px;
   background: url(/images/landing/ledge.png) bottom center no-repeat; }
-  /* line 122, ../../views/stylesheets/style.css.sass */
-  #landing-layout #call-to-action h2 {
+  /* line 125, source/stylesheets/style.css.sass */
+  body#landing-layout #call-to-action h2 {
     font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: normal;
     font-style: normal;
@@ -650,38 +652,38 @@ a {
     color: white;
     top: 120px;
     text-align: center; }
-    /* line 130, ../../views/stylesheets/style.css.sass */
-    #landing-layout #call-to-action h2 a {
+    /* line 133, source/stylesheets/style.css.sass */
+    body#landing-layout #call-to-action h2 a {
       color: white; }
-      /* line 133, ../../views/stylesheets/style.css.sass */
-      #landing-layout #call-to-action h2 a:hover {
+      /* line 136, source/stylesheets/style.css.sass */
+      body#landing-layout #call-to-action h2 a:hover {
         color: #89a2b3; }
-  /* line 136, ../../views/stylesheets/style.css.sass */
-  #landing-layout #call-to-action .cta {
+  /* line 139, source/stylesheets/style.css.sass */
+  body#landing-layout #call-to-action .cta {
     position: absolute;
     display: block;
     background: 0 0 no-repeat;
     text-indent: -999em; }
-  /* line 142, ../../views/stylesheets/style.css.sass */
-  #landing-layout #call-to-action .cta-1 {
+  /* line 145, source/stylesheets/style.css.sass */
+  body#landing-layout #call-to-action .cta-1 {
     background-image: url(/images/landing/cta_1.png);
     width: 124px;
     height: 124px;
     top: -30px;
     right: 60px; }
-  /* line 149, ../../views/stylesheets/style.css.sass */
-  #landing-layout #call-to-action .cta-2 {
+  /* line 152, source/stylesheets/style.css.sass */
+  body#landing-layout #call-to-action .cta-2 {
     background-image: url(/images/landing/cta_2.png);
     width: 214px;
     height: 67px;
     top: 100px;
     right: 20px; }
-/* line 160, ../../views/stylesheets/style.css.sass */
-#landing-layout #slideshow {
+/* line 163, source/stylesheets/style.css.sass */
+body#landing-layout #slideshow {
   position: relative;
   overflow: hidden; }
-  /* line 164, ../../views/stylesheets/style.css.sass */
-  #landing-layout #slideshow .control {
+  /* line 167, source/stylesheets/style.css.sass */
+  body#landing-layout #slideshow .control {
     display: block;
     position: absolute;
     background: 0 0 no-repeat;
@@ -689,18 +691,18 @@ a {
     height: 44px;
     text-indent: -999em;
     z-index: 100; }
-    /* line 176, ../../views/stylesheets/style.css.sass */
-    #landing-layout #slideshow .control.previous-slide {
+    /* line 179, source/stylesheets/style.css.sass */
+    body#landing-layout #slideshow .control.previous-slide {
       background-image: url(/images/landing/sliderbutton_prev.png);
       left: 140px;
       top: 180px; }
-    /* line 180, ../../views/stylesheets/style.css.sass */
-    #landing-layout #slideshow .control.next-slide {
+    /* line 183, source/stylesheets/style.css.sass */
+    body#landing-layout #slideshow .control.next-slide {
       background-image: url(/images/landing/sliderbutton_next.png);
       right: 140px;
       top: 180px; }
-  /* line 185, ../../views/stylesheets/style.css.sass */
-  #landing-layout #slideshow #slides {
+  /* line 188, source/stylesheets/style.css.sass */
+  body#landing-layout #slideshow #slides {
     -moz-transition-property: all;
     -webkit-transition-property: all;
     -o-transition-property: all;
@@ -710,95 +712,95 @@ a {
     -o-transition-duration: 1s;
     transition-duration: 1s;
     position: relative; }
-  /* line 189, ../../views/stylesheets/style.css.sass */
-  #landing-layout #slideshow .slide {
+  /* line 192, source/stylesheets/style.css.sass */
+  body#landing-layout #slideshow .slide {
     display: inline;
     float: left; }
-  /* line 193, ../../views/stylesheets/style.css.sass */
-  #landing-layout #slideshow .slide .inner {
+  /* line 196, source/stylesheets/style.css.sass */
+  body#landing-layout #slideshow .slide .inner {
     width: 541px;
     margin: 0 auto; }
-/* line 200, ../../views/stylesheets/style.css.sass */
-#landing-layout #main {
+/* line 203, source/stylesheets/style.css.sass */
+body#landing-layout #main {
   overflow: hidden;
   *zoom: 1;
   margin-top: 3em; }
-  /* line 204, ../../views/stylesheets/style.css.sass */
-  #landing-layout #main .primary {
+  /* line 207, source/stylesheets/style.css.sass */
+  body#landing-layout #main .primary {
     padding-left: 80px;
     display: inline;
     float: left;
     margin-right: 20px;
     width: 300px; }
     /* line 147, ../../../../../../.rvm/gems/ruby-1.9.2-p180@better_at_static/gems/compass-0.11.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
-    * html #landing-layout #main .primary {
+    * html body#landing-layout #main .primary {
       overflow-x: hidden; }
-  /* line 207, ../../views/stylesheets/style.css.sass */
-  #landing-layout #main .secondary {
+  /* line 210, source/stylesheets/style.css.sass */
+  body#landing-layout #main .secondary {
     display: inline;
     float: left;
     margin-right: 20px;
     width: 300px; }
     /* line 147, ../../../../../../.rvm/gems/ruby-1.9.2-p180@better_at_static/gems/compass-0.11.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
-    * html #landing-layout #main .secondary {
+    * html body#landing-layout #main .secondary {
       overflow-x: hidden; }
-  /* line 209, ../../views/stylesheets/style.css.sass */
-  #landing-layout #main .tertiary {
+  /* line 212, source/stylesheets/style.css.sass */
+  body#landing-layout #main .tertiary {
     display: inline;
     float: left; }
-  /* line 214, ../../views/stylesheets/style.css.sass */
-  #landing-layout #main dl dt, #landing-layout #main dl dd {
+  /* line 217, source/stylesheets/style.css.sass */
+  body#landing-layout #main dl dt, body#landing-layout #main dl dd {
     padding: 0 0 0 65px;
     margin: 0; }
-  /* line 219, ../../views/stylesheets/style.css.sass */
-  #landing-layout #main dl dt {
+  /* line 222, source/stylesheets/style.css.sass */
+  body#landing-layout #main dl dt {
     background: 0 0 no-repeat; }
-    /* line 223, ../../views/stylesheets/style.css.sass */
-    #landing-layout #main dl dt.devices {
+    /* line 226, source/stylesheets/style.css.sass */
+    body#landing-layout #main dl dt.devices {
       background-image: url(/images/icons/devices.png);
       background-position: 0 0; }
-    /* line 226, ../../views/stylesheets/style.css.sass */
-    #landing-layout #main dl dt.plans {
+    /* line 229, source/stylesheets/style.css.sass */
+    body#landing-layout #main dl dt.plans {
       background-image: url(/images/icons/plans.png);
       background-position: 8px 0; }
-    /* line 229, ../../views/stylesheets/style.css.sass */
-    #landing-layout #main dl dt.people {
+    /* line 232, source/stylesheets/style.css.sass */
+    body#landing-layout #main dl dt.people {
       background-image: url(/images/icons/people.png);
       background-position: 16px 0; }
-    /* line 232, ../../views/stylesheets/style.css.sass */
-    #landing-layout #main dl dt.sharing {
+    /* line 235, source/stylesheets/style.css.sass */
+    body#landing-layout #main dl dt.sharing {
       background-image: url(/images/icons/lock.png);
       background-position: 24px 0; }
-    /* line 235, ../../views/stylesheets/style.css.sass */
-    #landing-layout #main dl dt.records {
+    /* line 238, source/stylesheets/style.css.sass */
+    body#landing-layout #main dl dt.records {
       background-image: url(/images/icons/filebox.png);
       background-position: 22px 0; }
-    /* line 238, ../../views/stylesheets/style.css.sass */
-    #landing-layout #main dl dt.tracking {
+    /* line 241, source/stylesheets/style.css.sass */
+    body#landing-layout #main dl dt.tracking {
       background-image: url(/images/icons/chart.png);
       background-position: 20px 0; }
-  /* line 243, ../../views/stylesheets/style.css.sass */
-  #landing-layout #main dl dt {
+  /* line 246, source/stylesheets/style.css.sass */
+  body#landing-layout #main dl dt {
     padding-bottom: 1.5em; }
-    /* line 246, ../../views/stylesheets/style.css.sass */
-    #landing-layout #main dl dt a {
+    /* line 249, source/stylesheets/style.css.sass */
+    body#landing-layout #main dl dt a {
       font-size: 1.3em;
       line-height: 0.75em;
       text-decoration: none; }
-  /* line 250, ../../views/stylesheets/style.css.sass */
-  #landing-layout #main dl dd {
+  /* line 253, source/stylesheets/style.css.sass */
+  body#landing-layout #main dl dd {
     color: #999999;
     font-size: 14px;
     margin-top: -1.5em;
     margin-bottom: 1.5em; }
-  /* line 256, ../../views/stylesheets/style.css.sass */
-  #landing-layout #main .tertiary {
+  /* line 259, source/stylesheets/style.css.sass */
+  body#landing-layout #main .tertiary {
     border-left: 5px solid #e3e3e3;
     background: url(/images/landing/whitepaper.png) center 100px no-repeat;
     height: 230px;
     width: 200px; }
-    /* line 262, ../../views/stylesheets/style.css.sass */
-    #landing-layout #main .tertiary a {
+    /* line 265, source/stylesheets/style.css.sass */
+    body#landing-layout #main .tertiary a {
       display: block;
       background: url(/images/icons/download.png) 0 5px no-repeat;
       font-size: 14px;
@@ -806,6 +808,344 @@ a {
       padding-left: 40px;
       margin-top: 20px;
       margin-left: 44px; }
-      /* line 271, ../../views/stylesheets/style.css.sass */
-      #landing-layout #main .tertiary a span {
+      /* line 274, source/stylesheets/style.css.sass */
+      body#landing-layout #main .tertiary a span {
         display: block; }
+
+/* line 286, source/stylesheets/style.css.sass */
+body#default-layout p {
+  color: #888888; }
+/* line 289, source/stylesheets/style.css.sass */
+body#default-layout h3 {
+  font-weight: bold; }
+/* line 292, source/stylesheets/style.css.sass */
+body#default-layout h4 {
+  font-size: 16px;
+  font-weight: bold; }
+/* line 296, source/stylesheets/style.css.sass */
+body#default-layout .centered {
+  margin: 0 auto;
+  text-align: center; }
+/* line 300, source/stylesheets/style.css.sass */
+body#default-layout ul.blog-entries {
+  list-style: none;
+  padding: 0; }
+  /* line 11, ../../../../../../.rvm/gems/ruby-1.9.2-p180@better_at_static/gems/compass-0.11.2/frameworks/compass/stylesheets/compass/typography/lists/_bullets.scss */
+  body#default-layout ul.blog-entries li {
+    list-style-image: none;
+    list-style-type: none;
+    margin-left: 0px; }
+  /* line 304, source/stylesheets/style.css.sass */
+  body#default-layout ul.blog-entries li {
+    position: relative; }
+  /* line 307, source/stylesheets/style.css.sass */
+  body#default-layout ul.blog-entries label {
+    position: absolute;
+    left: -40px;
+    top: -5px;
+    background: url(/images/calendar.png) 0 0 no-repeat;
+    color: #9b9b9b;
+    font-size: 12px;
+    font-weight: bold;
+    width: 30px;
+    height: 31px;
+    padding-top: 13px;
+    text-align: center; }
+  /* line 320, source/stylesheets/style.css.sass */
+  body#default-layout ul.blog-entries h4 {
+    font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 100;
+    font-style: italic;
+    font-size: 18px;
+    margin-bottom: 0.25em; }
+/* line 325, source/stylesheets/style.css.sass */
+body#default-layout ul.twitter {
+  list-style: none;
+  padding: 0; }
+  /* line 11, ../../../../../../.rvm/gems/ruby-1.9.2-p180@better_at_static/gems/compass-0.11.2/frameworks/compass/stylesheets/compass/typography/lists/_bullets.scss */
+  body#default-layout ul.twitter li {
+    list-style-image: none;
+    list-style-type: none;
+    margin-left: 0px; }
+  /* line 328, source/stylesheets/style.css.sass */
+  body#default-layout ul.twitter li {
+    margin-bottom: 0.75em; }
+/* line 332, source/stylesheets/style.css.sass */
+body#default-layout .contact-form input[type=text], body#default-layout .contact-form textarea {
+  display: block;
+  border: 1px solid #d4d4d2;
+  background: #fffef3;
+  font-size: 16px;
+  padding: 0.25em 0.5em;
+  width: 100%;
+  margin-bottom: 0.5em; }
+/* line 341, source/stylesheets/style.css.sass */
+body#default-layout .contact-form textarea {
+  height: 10em; }
+/* line 344, source/stylesheets/style.css.sass */
+body#default-layout .contact-form button {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+  border: none;
+  background: #003c5f;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 10px 30px; }
+/* line 353, source/stylesheets/style.css.sass */
+body#default-layout .cta-box {
+  border: 1px solid #dbddde;
+  background: #f0f3f5;
+  padding: 1.5em 1em;
+  margin-bottom: 1.5em; }
+  /* line 359, source/stylesheets/style.css.sass */
+  body#default-layout .cta-box h3 {
+    font-size: 16px; }
+/* line 362, source/stylesheets/style.css.sass */
+body#default-layout .support-header {
+  margin-bottom: 3em; }
+/* line 365, source/stylesheets/style.css.sass */
+body#default-layout dl.benefits {
+  padding-left: 2em; }
+  /* line 368, source/stylesheets/style.css.sass */
+  body#default-layout dl.benefits dt {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+    color: #333333; }
+  /* line 373, source/stylesheets/style.css.sass */
+  body#default-layout dl.benefits dd {
+    margin-bottom: 1.5em;
+    color: #999999;
+    margin-left: 0; }
+/* line 378, source/stylesheets/style.css.sass */
+body#default-layout .signup-contact {
+  border-top: 2px solid #dddddd;
+  padding-top: 1.5em;
+  margin-top: 1.5em; }
+  /* line 383, source/stylesheets/style.css.sass */
+  body#default-layout .signup-contact .signup-button {
+    margin-bottom: 1em; }
+/* line 387, source/stylesheets/style.css.sass */
+body#default-layout .contact-info h3, body#default-layout .contact-info label, body#default-layout .contact-info a, body#default-layout .contact-info span, body#default-layout .contact-info p {
+  color: white; }
+/* line 390, source/stylesheets/style.css.sass */
+body#default-layout .contact-info .alt-contact,
+body#default-layout .contact-info .questions {
+  padding: 1em 2em; }
+/* line 394, source/stylesheets/style.css.sass */
+body#default-layout .contact-info .alt-contact {
+  -moz-border-radius-topleft: 10px;
+  -webkit-border-top-left-radius: 10px;
+  -o-border-top-left-radius: 10px;
+  -ms-border-top-left-radius: 10px;
+  -khtml-border-top-left-radius: 10px;
+  border-top-left-radius: 10px;
+  -moz-border-radius-topright: 10px;
+  -webkit-border-top-right-radius: 10px;
+  -o-border-top-right-radius: 10px;
+  -ms-border-top-right-radius: 10px;
+  -khtml-border-top-right-radius: 10px;
+  border-top-right-radius: 10px;
+  background: #003c5f;
+  padding: 1em 2em; }
+  /* line 399, source/stylesheets/style.css.sass */
+  body#default-layout .contact-info .alt-contact h3 {
+    text-align: center; }
+  /* line 402, source/stylesheets/style.css.sass */
+  body#default-layout .contact-info .alt-contact ul {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+    /* line 11, ../../../../../../.rvm/gems/ruby-1.9.2-p180@better_at_static/gems/compass-0.11.2/frameworks/compass/stylesheets/compass/typography/lists/_bullets.scss */
+    body#default-layout .contact-info .alt-contact ul li {
+      list-style-image: none;
+      list-style-type: none;
+      margin-left: 0px; }
+    /* line 407, source/stylesheets/style.css.sass */
+    body#default-layout .contact-info .alt-contact ul li {
+      font-size: 20px;
+      padding-left: 30px;
+      background: 0 center no-repeat; }
+      /* line 412, source/stylesheets/style.css.sass */
+      body#default-layout .contact-info .alt-contact ul li.email {
+        background-image: url(/images/icons/contact_mail.png); }
+      /* line 414, source/stylesheets/style.css.sass */
+      body#default-layout .contact-info .alt-contact ul li.twitter {
+        background-image: url(/images/icons/contact_twitter.png); }
+      /* line 416, source/stylesheets/style.css.sass */
+      body#default-layout .contact-info .alt-contact ul li.phone {
+        background-image: url(/images/icons/contact_phone.png);
+        background-position: 5px center; }
+      /* line 420, source/stylesheets/style.css.sass */
+      body#default-layout .contact-info .alt-contact ul li label {
+        display: -moz-inline-box;
+        -moz-box-orient: vertical;
+        display: inline-block;
+        vertical-align: middle;
+        *vertical-align: auto;
+        width: 70px; }
+        /* line 7, ../../../../../../.rvm/gems/ruby-1.9.2-p180@better_at_static/gems/compass-0.11.2/frameworks/compass/stylesheets/compass/css3/_inline-block.scss */
+        body#default-layout .contact-info .alt-contact ul li label {
+          *display: inline; }
+      /* line 424, source/stylesheets/style.css.sass */
+      body#default-layout .contact-info .alt-contact ul li span, body#default-layout .contact-info .alt-contact ul li a {
+        font-weight: 100;
+        font-style: italic; }
+/* line 428, source/stylesheets/style.css.sass */
+body#default-layout .contact-info .questions {
+  -moz-border-radius-bottomleft: 10px;
+  -webkit-border-bottom-left-radius: 10px;
+  -o-border-bottom-left-radius: 10px;
+  -ms-border-bottom-left-radius: 10px;
+  -khtml-border-bottom-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  -moz-border-radius-bottomright: 10px;
+  -webkit-border-bottom-right-radius: 10px;
+  -o-border-bottom-right-radius: 10px;
+  -ms-border-bottom-right-radius: 10px;
+  -khtml-border-bottom-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background: url(/images/icons/book.png) 7% 10px no-repeat, url(/images/icons/bookmark.png) 92% 0 no-repeat;
+  background-color: #a4be93;
+  padding: 1em 5.5em; }
+/* line 441, source/stylesheets/style.css.sass */
+body#default-layout header h1#logo {
+  margin: 0.75em 0 0; }
+  /* line 444, source/stylesheets/style.css.sass */
+  body#default-layout header h1#logo a {
+    display: -moz-inline-box;
+    -moz-box-orient: vertical;
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
+    font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    background: url(/images/logo_alt.png) 0 0 no-repeat;
+    height: 50px;
+    color: black;
+    text-decoration: none;
+    font-size: 24px; }
+    /* line 7, ../../../../../../.rvm/gems/ruby-1.9.2-p180@better_at_static/gems/compass-0.11.2/frameworks/compass/stylesheets/compass/css3/_inline-block.scss */
+    body#default-layout header h1#logo a {
+      *display: inline; }
+    /* line 453, source/stylesheets/style.css.sass */
+    body#default-layout header h1#logo a span.company {
+      visibility: hidden;
+      float: left;
+      width: 0; }
+    /* line 458, source/stylesheets/style.css.sass */
+    body#default-layout header h1#logo a span.interest {
+      padding-left: 140px;
+      line-height: 1.7em; }
+/* line 463, source/stylesheets/style.css.sass */
+body#default-layout header h2#tagline {
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 100;
+  font-style: italic;
+  color: #e5ebee;
+  text-align: center; }
+  /* line 468, source/stylesheets/style.css.sass */
+  body#default-layout header h2#tagline span {
+    text-decoration: underline; }
+/* line 472, source/stylesheets/style.css.sass */
+body#default-layout header a.back-to-main {
+  display: block;
+  background: url(/images/back_to_main.png) 0 0 no-repeat;
+  width: 86px;
+  height: 20px;
+  text-indent: -999em; }
+/* line 483, source/stylesheets/style.css.sass */
+body#default-layout #main {
+  overflow: hidden;
+  *zoom: 1;
+  padding-top: 0.75em;
+  margin-bottom: 3em; }
+  /* line 489, source/stylesheets/style.css.sass */
+  body#default-layout #main h2.page-title {
+    font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    margin: 0; }
+  /* line 492, source/stylesheets/style.css.sass */
+  body#default-layout #main p.page-subtitle {
+    font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 100;
+    font-style: italic;
+    color: #888888;
+    font-size: 20px; }
+/* line 501, source/stylesheets/style.css.sass */
+body#default-layout .content-header {
+  margin-bottom: 3em; }
+/* line 508, source/stylesheets/style.css.sass */
+body#default-layout .primary {
+  display: inline;
+  float: left;
+  margin-right: 20px;
+  width: 460px;
+  padding-right: 160px; }
+  /* line 147, ../../../../../../.rvm/gems/ruby-1.9.2-p180@better_at_static/gems/compass-0.11.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+  * html body#default-layout .primary {
+    overflow-x: hidden; }
+/* line 511, source/stylesheets/style.css.sass */
+body#default-layout .secondary {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 300px; }
+  /* line 147, ../../../../../../.rvm/gems/ruby-1.9.2-p180@better_at_static/gems/compass-0.11.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+  * html body#default-layout .secondary {
+    overflow-x: hidden; }
+
+/* line 520, source/stylesheets/style.css.sass */
+#faqs .cta {
+  margin-bottom: 3em; }
+/* line 523, source/stylesheets/style.css.sass */
+#faqs h4 {
+  font-size: 16px;
+  margin-bottom: 0.25em;
+  font-weight: bold; }
+
+/* line 531, source/stylesheets/style.css.sass */
+#tour #tour-sections {
+  padding-top: 3em; }
+/* line 535, source/stylesheets/style.css.sass */
+#tour .section h2.section-title {
+  color: #1f3f55;
+  font-size: 24px;
+  margin-bottom: 5px; }
+/* line 540, source/stylesheets/style.css.sass */
+#tour .section.section-1 {
+  background: url(/images/tour/1.png) right 0 no-repeat;
+  padding-right: 600px;
+  min-height: 249px; }
+/* line 545, source/stylesheets/style.css.sass */
+#tour .section.section-2 {
+  background: url(/images/tour/2.png) left 0 no-repeat;
+  padding-left: 600px;
+  min-height: 365px; }
+/* line 550, source/stylesheets/style.css.sass */
+#tour .section.section-3 {
+  background: url(/images/tour/3.png) right 0 no-repeat;
+  padding-right: 600px;
+  min-height: 205px; }
+/* line 555, source/stylesheets/style.css.sass */
+#tour .section.section-4 {
+  background: url(/images/tour/4.png) left 0 no-repeat;
+  padding-left: 600px;
+  min-height: 178px; }
+/* line 560, source/stylesheets/style.css.sass */
+#tour .section.section-5 {
+  background: url(/images/tour/5.png) right bottom no-repeat;
+  padding-right: 600px;
+  padding-bottom: 120px;
+  min-height: 223px; }
+/* line 566, source/stylesheets/style.css.sass */
+#tour .section.section-6 {
+  background: url(/images/tour/6.png) left 0 no-repeat;
+  padding-left: 600px;
+  min-height: 192px; }
