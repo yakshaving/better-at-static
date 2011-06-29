@@ -1,2 +1,6 @@
 .sass-cache
 .rvmrc
+.DS_Store
+build/.DS_Store
+source/.DS_Store
+source/images/.DS_Store

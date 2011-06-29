@@ -15,19 +15,19 @@
   = stylesheet_link_tag "style.css", :media => "all"
   = javascript_include_tag "libs/modernizr-1.7.min.js"
   = yield_content :head
-  
+
 %body#default-layout
 
   #container
     %header
-      %h1#logo= link_to "<span class=\"company\">BettrAt</span> <span class=\"interest\">#{@page_name}</span>", '#'
+      %h1#logo= link_to "<span class=\"company\">BetterAt</span> <span class=\"interest\">#{@page_name}</span>", '/'
       = link_to "Back to main", "/", :class => "back-to-main"
-      
+
       - if yield_content :subheader
         #subheader= yield_content :subheader
 
     #main( role="main" )= yield
-    
+
     %footer= partial "shared_footer"
 
   = partial "footer_scripts"
