@@ -39,22 +39,25 @@ body
       color: #fff
       padding-top: 3em
       background: url(/images/footer_logo.png) 0 0 no-repeat
-    
+
     .section
       +column(2)
-    
+
       &.blog
         +column(3, true)
 
       a
         color: #89a2b3
+        +lato(300, normal)
+        &:hover
+          color: #E8F69A
 
       h3
         color: #fff
         margin: 0
 
       h3, li
-        font-size: 12px
+        font-size: 16px
         line-height: 1.25em
         margin-bottom: 0.75em
 
@@ -67,7 +70,7 @@ body
 // ============================================================================
 
 body#landing-layout
-  
+
   // Header
   // ==========================
 
@@ -98,14 +101,14 @@ body#landing-layout
           visibility: hidden
           float: left
           width: 0
-        
+
         span.interest
           padding-left: 170px
           line-height: 1.3em
-    
+
     // Tagline
     h2#tagline
-      +lato(100, italic)
+      +lato(300, italic)
       color: #e5ebee
       text-align: center
 
@@ -188,7 +191,7 @@ body#landing-layout
     #slides
       +transition(all)
       position: relative
-    
+
     .slide
       +float-left
 
@@ -221,7 +224,7 @@ body#landing-layout
       // Icons
       dt
         background: 0 0 no-repeat
-        
+
         // #TODO sprite this
         &.devices
           background-image: url(/images/icons/devices.png)
@@ -288,11 +291,11 @@ body#default-layout
 
   h3
     font-weight: bold
-  
+
   h4
     font-size: 16px
     font-weight: bold
-  
+
   .centered
     margin: 0 auto
     text-align: center
@@ -303,7 +306,7 @@ body#default-layout
 
     li
       position: relative
-    
+
     label
       position: absolute
       left: -40px
@@ -316,12 +319,12 @@ body#default-layout
       height: 31px
       padding-top: 13px
       text-align: center
-    
+
     h4
-      +lato(100, italic)
+      +lato(300, italic)
       font-size: 18px
       margin-bottom: 0.25em
-  
+
   ul.twitter
     +no-bullets
     padding: 0
@@ -337,7 +340,7 @@ body#default-layout
       padding: 0.25em 0.5em
       width: 100%
       margin-bottom: 0.5em
-    
+
     textarea
       height: 10em
 
@@ -369,12 +372,12 @@ body#default-layout
       font-size: 1.5em
       margin-bottom: 1em
       color: $header-color
-    
+
     dd
       margin-bottom: 1.5em
       color: $font-color
       margin-left: 0
-    
+
   .signup-contact
     border-top: 2px solid #ddd
     padding-top: 1.5em
@@ -424,7 +427,7 @@ body#default-layout
           span, a
             font-weight: 100
             font-style: italic
-    
+
     .questions
       +border-bottom-radius(10px)
       background: url(/images/icons/book.png) 7% 10px no-repeat, url(/images/icons/bookmark.png) 92% 0 no-repeat
@@ -454,14 +457,14 @@ body#default-layout
           visibility: hidden
           float: left
           width: 0
-        
+
         span.interest
           padding-left: 140px
           line-height: 1.7em
-    
+
     // Tagline
     h2#tagline
-      +lato(100, italic)
+      +lato(300, italic)
       color: #e5ebee
       text-align: center
 
@@ -476,7 +479,7 @@ body#default-layout
       height: 20px
       text-indent: -999em
 
-  
+
   // Main
   // ==========================
 
@@ -484,20 +487,20 @@ body#default-layout
     +clearfix
     padding-top: 0.75em
     margin-bottom: 3em
-    
+
     // Page titles
     h2.page-title
       +lato(900)
       margin: 0
     p.page-subtitle
-      +lato(100, italic)
+      +lato(300, italic)
       color: #888
       font-size: 20px
-  
+
 
   // Content Header
   // ==========================
-  
+
   .content-header
     margin-bottom: 3em
 
