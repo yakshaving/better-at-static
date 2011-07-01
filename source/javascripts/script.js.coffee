@@ -1,3 +1,7 @@
+window.previousTwice = () ->
+  $('.previous-slide.control').trigger('click')
+  $('.previous-slide.control').trigger('click')
+
 jQuery.fn.ba_slider = () ->
   # Containers and slides
   div = $(this)
@@ -22,8 +26,13 @@ jQuery.fn.ba_slider = () ->
   slide = (direction) ->
     if direction == "next" && slideIndex < slides.length
       slideIndex = (slideIndex + 1)
+      if (window.clickInterval != null)
+        clearInterval(window.clickInterval)
+        window.clickInterval = setInterval("$('.next-slide.control').trigger('click')", 6000)
     else if direction == "prev" && slideIndex > 1
       slideIndex = (slideIndex - 1)
+      clearInterval(window.clickInterval)
+      window.clickInterval = setInterval("$('.next-slide.control').trigger('click')", 6000)
 
     #TODO: make this less stupid.
     prev.show()
@@ -32,6 +41,8 @@ jQuery.fn.ba_slider = () ->
       prev.hide()
     if slideIndex == slides.length
       next.hide()
+      clearInterval(window.clickInterval)
+      window.clickInterval = setInterval("window.previousTwice()", 6000)
 
     # Use native CSS transitions if available, otherwise use jQuery animations
     if Modernizr.csstransitions
@@ -52,3 +63,8 @@ $('#slideshow').ba_slider()
 
 # News Ticker
 $('#news').cycle({speed:  500, timeout:  200})
+
+
+window.clickInterval = setInterval("$('.next-slide.control').trigger('click')", 6000)
+
+
