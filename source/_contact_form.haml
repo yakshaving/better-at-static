@@ -1,7 +1,38 @@
 .contact-form
-  %form
-    %input{ :placeholder => "Name", :name => "name", :type => "text" }
-    %input{ :placeholder => "Company", :name => "company", :type => "text" }
-    %input{ :placeholder => "Email address", :name => "email", :type => "text" }
-    %textarea{ :placeholder => "Message", :name => "message", :type => "text" }
-    %button{ :type => "submit" } Download
+
+  <!-- Begin MailChimp Signup Form -->
+  <script type="text/javascript">
+  // delete this script tag and use a "div.mce_inline_error{ XXX !important}" selector
+  // or fill this in and it will be inlined when errors are generated
+  var mc_custom_error_style = '';
+  </script>
+
+  #mc_embed_signup
+    %form{:action => "http://bettr.us2.list-manage1.com/subscribe/post?u=91fec6c15a51eb1801be88b61&amp;id=27e3d983c6", :method => "post", :id => "mc-embedded-subscribe-form",  :name => "mc-embedded-subscribe-form", :class => "validate", :target => "_blank" }
+      %fieldset
+        .mc-field-group
+          %input{:type => "text", :placeholder => "Name",  :name => "FULLNAME", :id => "mce-FULLNAME"}
+        .mc-field-group
+          %input{:type => "text", :placeholder => "Company",  :name => "COMPANY", :id => "mce-COMPANY"}
+        .mc-field-group
+          %input{:type => "text", :placeholder => "Email (required)",  :name => "EMAIL", :class => "required email", :id => "mce-EMAIL"}
+        .mc-field-group
+          %textarea{:type => "text", :placeholder => "Message",  :name => "MESSAGE", :id => "mce-MESSAGE"}
+        .mc-field-group
+          %input{:type => "text", :placeholder => "Company",  :name => "COMPANY", :id => "mce-COMPANY"}
+
+        .mc-field-group
+          %ul
+            %li I am/or represent:
+            %li
+              %input{:type => "checkbox", :value => "1",  :name => "group[2][1]", :id => "mce-group[2]-2-0"} &nbsp; a publisher or author's agent
+            %li
+              %input{:type => "checkbox", :value => "2",  :name => "group[2][2]", :id => "mce-group[2]-2-1"} &nbsp; an instructional or academic institution
+            %li
+              %input{:type => "checkbox", :valye => "4",  :name => "group[2][4]", :id => "mce-group[2]-2-2"} &nbsp; an enterprise or company/organization
+
+        #mce-responses
+          .response#mce-error-response{:style => "display:none"}
+          .response#mce-success-response{:style => "display:none"}
+          %br/
+          %button{:type => "submit",:value => "Contact Us", :name => "subscribe", :id => "mc-embedded-subscribe", :class => "btn"} Contact Us

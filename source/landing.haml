@@ -9,7 +9,7 @@
   %meta( http-equiv="X-UA-Compatible" content= "IE=edge,chrome=1" )
   %meta( name="viewport" content="width=device-width, initial-scale=1.0" )
 
-  %link( rel="shortcut icon" href="/favicon.ico" )
+  %link( rel="shortcut icon" href="/images/favicon.ico" )
   %link( rel="apple-touch-icon" href="/apple-touch-icon.png" )
 
   = stylesheet_link_tag "style.css", :media => "all"
@@ -73,7 +73,7 @@
 
       #call-to-action
         %h2 #{link_to "Schools", 'schools.html'} · #{link_to "Enterprise", 'enterprises.html'} · #{link_to "Publishers", 'publishers.html'}
-        = link_to "Find Us At <span>ASTD 2011</span>", '#', :class => 'cta cta-1'
+        = link_to "Find Us At <span>sxsw edu</span>", 'http://www.sxswedu.com/', :class => 'cta cta-1'
         = link_to "Learn More", 'tour.html', :class => 'cta cta-2'
 
     #main( role="main" )= yield
