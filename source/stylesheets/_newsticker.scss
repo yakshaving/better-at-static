@@ -4,14 +4,14 @@
 }
 
 ul#news {
+    @include adelle(100, normal);
     position: absolute;
-    top: 22px;
-    margin-left: 190px;
+    top: 29px;
+    margin-left: 185px;
     margin-top: 4px;
     list-style-type: none;
-    color: #89a2b3;
+    color: #A3C1D5;
     font-size: 36px;
-    font-weight: normal;
     letter-spacing: -1px;
     list-style: none;
     min-height: 1em;

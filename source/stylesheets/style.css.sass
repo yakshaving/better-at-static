@@ -15,11 +15,18 @@ a
   text-decoration: none
 
 p
-  font-size: 15px
+  font-size: 16px
+
+strong
+  color: #444
+  background: #ffe
+  padding: 2px 3px
 
 .spacer
   height: 150px
   display: block
+
+
 
 // Shared Layout
 // ============================================================================
@@ -47,14 +54,14 @@ body
       background: url(../images/footer_logo.png) 0 0 no-repeat
 
     .section
-      +column(2)
+      +column(2.5)
 
       &.blog
         +column(3, true)
 
       a
         color: #89a2b3
-        +lato(300, normal)
+        +adelle(100, normal)
         &:hover
           color: #E8F69A
 
@@ -63,6 +70,7 @@ body
         margin: 0
 
       h3, li
+        +adelle(900, normal)
         font-size: 16px
         line-height: 1.25em
         margin-bottom: 0.5em
@@ -132,7 +140,6 @@ body#landing-layout
     background: url(../images/landing/ledge.png) bottom center no-repeat
 
     h2
-      +lato
       position: absolute
       width: $blueprint-container-size
       color: #fff
@@ -141,6 +148,7 @@ body#landing-layout
 
       a
         color: #fff
+        +adelle(100, normal)
 
         &:hover
           color: #89a2b3
@@ -254,12 +262,15 @@ body#landing-layout
 
       // DT height hack.
       dt
-        padding-bottom: 1.5em
+        padding-bottom: 2em
 
         a
-          font-size: 1.3em
-          line-height: 0.75em
+          +adelle
+          color: #666
+          font-size: 1.5em
+          line-height: 0.9em
           text-decoration: none
+
       dd
         color: #999
         font-size: 14px
@@ -275,8 +286,9 @@ body#landing-layout
       a
         display: block
         background: url(../images/icons/download.png) 0 5px no-repeat
+        color: #999
         font-size: 14px
-        font-weight: bold
+        +adelle(900, normal)
         padding-left: 40px
         margin-top: 20px
         margin-left: 44px
@@ -297,7 +309,8 @@ body#default-layout
     color: #888
 
   h3
-    font-weight: bold
+    +adelle(900, normal)
+    font-size: 1.6em
 
   h4
     font-size: 16px
@@ -551,7 +564,6 @@ body#default-layout
 // Schools & Higher Education
 #schools
 
-
 // For Enterprises
 #enterprises
 
@@ -563,10 +575,11 @@ body#default-layout
 
   .section
     h2.section-title
-      color: #1f3f55
+      color: #444
       font-size: 24px
       margin: 10px 0 5px 0
       font-weight: bold
+      font-family: 'adelle-1', 'adelle-2', helvetica, arial
 
     &.section-1
       background: url(../images/tour/1.png) right 0 no-repeat

@@ -15,6 +15,9 @@
   = stylesheet_link_tag "style.css", :media => "all"
   = javascript_include_tag "libs/modernizr-1.7.min.js"
   = yield_content :head
+  :erb
+    <script type="text/javascript" src="http://use.typekit.com/hpx6cyc.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
 %body#default-layout
 

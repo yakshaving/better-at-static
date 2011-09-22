@@ -14,7 +14,12 @@
     DD_belatedPNG.fix("img, .png_bg");
 
 :javascript
-  var _gaq=[["_setAccount","UA-XXXXX-X"],["_trackPageview"]]; // Change UA-XXXXX-X to be your site's ID
+  var _gaq=[["_setAccount","UA-25846317-1"],["_trackPageview"]]; // Change UA-XXXXX-X to be your site's ID
   (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
   g.src=("https:"==location.protocol?"//ssl":"//www")+".google-analytics.com/ga.js";
   s.parentNode.insertBefore(g,s)}(document,"script"));
+
+<!-- start Mixpanel -->
+:javascript
+  var mpq=[];mpq.push(["init","20a30effb252ca91c9df6f14d15e1420"]);(function(){var b,a,e,d,c;b=document.createElement("script");b.type="text/javascript";b.async=true;b.src=(document.location.protocol==="https:"?"https:":"http:")+"//api.mixpanel.com/site_media/js/api/mixpanel.js";a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(b,a);e=function(f){return function(){mpq.push([f].concat(Array.prototype.slice.call(arguments,0)))}};d=["init","track","track_links","track_forms","register","register_once","identify","name_tag","set_config"];for(c=0;c<d.length;c++){mpq[d[c]]=e(d[c])}})();
+<!-- end Mixpanel -->
